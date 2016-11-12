@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F52CE6221DD7C866000C921D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52CE6211DD7C866000C921D /* AppDelegate.swift */; };
+		F52CE6241DD7C866000C921D /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F52CE6231DD7C866000C921D /* GameScene.sks */; };
+		F52CE6261DD7C866000C921D /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = F52CE6251DD7C866000C921D /* Actions.sks */; };
+		F52CE6281DD7C866000C921D /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52CE6271DD7C866000C921D /* GameScene.swift */; };
+		F52CE62A1DD7C866000C921D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52CE6291DD7C866000C921D /* GameViewController.swift */; };
+		F52CE62D1DD7C866000C921D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52CE62B1DD7C866000C921D /* Main.storyboard */; };
+		F52CE62F1DD7C866000C921D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F52CE62E1DD7C866000C921D /* Assets.xcassets */; };
+		F52CE6321DD7C866000C921D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52CE6301DD7C866000C921D /* LaunchScreen.storyboard */; };
+		F52CE63D1DD7C866000C921D /* CodeDay_WinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52CE63C1DD7C866000C921D /* CodeDay_WinTests.swift */; };
+		F52CE6481DD7C866000C921D /* CodeDay_WinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52CE6471DD7C866000C921D /* CodeDay_WinUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F52CE6391DD7C866000C921D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F52CE6161DD7C866000C921D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F52CE61D1DD7C866000C921D;
+			remoteInfo = "CodeDay Win";
+		};
+		F52CE6441DD7C866000C921D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F52CE6161DD7C866000C921D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F52CE61D1DD7C866000C921D;
+			remoteInfo = "CodeDay Win";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F52CE61E1DD7C866000C921D /* CodeDay Win.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CodeDay Win.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F52CE6211DD7C866000C921D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F52CE6231DD7C866000C921D /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		F52CE6251DD7C866000C921D /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		F52CE6271DD7C866000C921D /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		F52CE6291DD7C866000C921D /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		F52CE62C1DD7C866000C921D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F52CE62E1DD7C866000C921D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F52CE6311DD7C866000C921D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F52CE6331DD7C866000C921D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F52CE6381DD7C866000C921D /* CodeDay WinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CodeDay WinTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F52CE63C1DD7C866000C921D /* CodeDay_WinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeDay_WinTests.swift; sourceTree = "<group>"; };
+		F52CE63E1DD7C866000C921D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F52CE6431DD7C866000C921D /* CodeDay WinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CodeDay WinUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F52CE6471DD7C866000C921D /* CodeDay_WinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeDay_WinUITests.swift; sourceTree = "<group>"; };
+		F52CE6491DD7C866000C921D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F52CE61B1DD7C866000C921D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F52CE6351DD7C866000C921D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F52CE6401DD7C866000C921D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F52CE6151DD7C866000C921D = {
+			isa = PBXGroup;
+			children = (
+				F52CE6201DD7C866000C921D /* CodeDay Win */,
+				F52CE63B1DD7C866000C921D /* CodeDay WinTests */,
+				F52CE6461DD7C866000C921D /* CodeDay WinUITests */,
+				F52CE61F1DD7C866000C921D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F52CE61F1DD7C866000C921D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F52CE61E1DD7C866000C921D /* CodeDay Win.app */,
+				F52CE6381DD7C866000C921D /* CodeDay WinTests.xctest */,
+				F52CE6431DD7C866000C921D /* CodeDay WinUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F52CE6201DD7C866000C921D /* CodeDay Win */ = {
+			isa = PBXGroup;
+			children = (
+				F52CE6211DD7C866000C921D /* AppDelegate.swift */,
+				F52CE6231DD7C866000C921D /* GameScene.sks */,
+				F52CE6251DD7C866000C921D /* Actions.sks */,
+				F52CE6271DD7C866000C921D /* GameScene.swift */,
+				F52CE6291DD7C866000C921D /* GameViewController.swift */,
+				F52CE62B1DD7C866000C921D /* Main.storyboard */,
+				F52CE62E1DD7C866000C921D /* Assets.xcassets */,
+				F52CE6301DD7C866000C921D /* LaunchScreen.storyboard */,
+				F52CE6331DD7C866000C921D /* Info.plist */,
+			);
+			path = "CodeDay Win";
+			sourceTree = "<group>";
+		};
+		F52CE63B1DD7C866000C921D /* CodeDay WinTests */ = {
+			isa = PBXGroup;
+			children = (
+				F52CE63C1DD7C866000C921D /* CodeDay_WinTests.swift */,
+				F52CE63E1DD7C866000C921D /* Info.plist */,
+			);
+			path = "CodeDay WinTests";
+			sourceTree = "<group>";
+		};
+		F52CE6461DD7C866000C921D /* CodeDay WinUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F52CE6471DD7C866000C921D /* CodeDay_WinUITests.swift */,
+				F52CE6491DD7C866000C921D /* Info.plist */,
+			);
+			path = "CodeDay WinUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F52CE61D1DD7C866000C921D /* CodeDay Win */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F52CE64C1DD7C866000C921D /* Build configuration list for PBXNativeTarget "CodeDay Win" */;
+			buildPhases = (
+				F52CE61A1DD7C866000C921D /* Sources */,
+				F52CE61B1DD7C866000C921D /* Frameworks */,
+				F52CE61C1DD7C866000C921D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CodeDay Win";
+			productName = "CodeDay Win";
+			productReference = F52CE61E1DD7C866000C921D /* CodeDay Win.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F52CE6371DD7C866000C921D /* CodeDay WinTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F52CE64F1DD7C866000C921D /* Build configuration list for PBXNativeTarget "CodeDay WinTests" */;
+			buildPhases = (
+				F52CE6341DD7C866000C921D /* Sources */,
+				F52CE6351DD7C866000C921D /* Frameworks */,
+				F52CE6361DD7C866000C921D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F52CE63A1DD7C866000C921D /* PBXTargetDependency */,
+			);
+			name = "CodeDay WinTests";
+			productName = "CodeDay WinTests";
+			productReference = F52CE6381DD7C866000C921D /* CodeDay WinTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F52CE6421DD7C866000C921D /* CodeDay WinUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F52CE6521DD7C866000C921D /* Build configuration list for PBXNativeTarget "CodeDay WinUITests" */;
+			buildPhases = (
+				F52CE63F1DD7C866000C921D /* Sources */,
+				F52CE6401DD7C866000C921D /* Frameworks */,
+				F52CE6411DD7C866000C921D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F52CE6451DD7C866000C921D /* PBXTargetDependency */,
+			);
+			name = "CodeDay WinUITests";
+			productName = "CodeDay WinUITests";
+			productReference = F52CE6431DD7C866000C921D /* CodeDay WinUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F52CE6161DD7C866000C921D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Arnav Chawla";
+				TargetAttributes = {
+					F52CE61D1DD7C866000C921D = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 24597663G4;
+						ProvisioningStyle = Automatic;
+					};
+					F52CE6371DD7C866000C921D = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 24597663G4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F52CE61D1DD7C866000C921D;
+					};
+					F52CE6421DD7C866000C921D = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 24597663G4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F52CE61D1DD7C866000C921D;
+					};
+				};
+			};
+			buildConfigurationList = F52CE6191DD7C866000C921D /* Build configuration list for PBXProject "CodeDay Win" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F52CE6151DD7C866000C921D;
+			productRefGroup = F52CE61F1DD7C866000C921D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F52CE61D1DD7C866000C921D /* CodeDay Win */,
+				F52CE6371DD7C866000C921D /* CodeDay WinTests */,
+				F52CE6421DD7C866000C921D /* CodeDay WinUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F52CE61C1DD7C866000C921D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F52CE62D1DD7C866000C921D /* Main.storyboard in Resources */,
+				F52CE6241DD7C866000C921D /* GameScene.sks in Resources */,
+				F52CE62F1DD7C866000C921D /* Assets.xcassets in Resources */,
+				F52CE6321DD7C866000C921D /* LaunchScreen.storyboard in Resources */,
+				F52CE6261DD7C866000C921D /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F52CE6361DD7C866000C921D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F52CE6411DD7C866000C921D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F52CE61A1DD7C866000C921D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F52CE6281DD7C866000C921D /* GameScene.swift in Sources */,
+				F52CE62A1DD7C866000C921D /* GameViewController.swift in Sources */,
+				F52CE6221DD7C866000C921D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F52CE6341DD7C866000C921D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F52CE63D1DD7C866000C921D /* CodeDay_WinTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F52CE63F1DD7C866000C921D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F52CE6481DD7C866000C921D /* CodeDay_WinUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F52CE63A1DD7C866000C921D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F52CE61D1DD7C866000C921D /* CodeDay Win */;
+			targetProxy = F52CE6391DD7C866000C921D /* PBXContainerItemProxy */;
+		};
+		F52CE6451DD7C866000C921D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F52CE61D1DD7C866000C921D /* CodeDay Win */;
+			targetProxy = F52CE6441DD7C866000C921D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F52CE62B1DD7C866000C921D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F52CE62C1DD7C866000C921D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F52CE6301DD7C866000C921D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F52CE6311DD7C866000C921D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F52CE64A1DD7C866000C921D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F52CE64B1DD7C866000C921D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F52CE64D1DD7C866000C921D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 24597663G4;
+				INFOPLIST_FILE = "CodeDay Win/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ArnavChawla.CodeDay-Win";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F52CE64E1DD7C866000C921D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 24597663G4;
+				INFOPLIST_FILE = "CodeDay Win/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ArnavChawla.CodeDay-Win";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F52CE6501DD7C866000C921D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 24597663G4;
+				INFOPLIST_FILE = "CodeDay WinTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ArnavChawla.CodeDay-WinTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodeDay Win.app/CodeDay Win";
+			};
+			name = Debug;
+		};
+		F52CE6511DD7C866000C921D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 24597663G4;
+				INFOPLIST_FILE = "CodeDay WinTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ArnavChawla.CodeDay-WinTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodeDay Win.app/CodeDay Win";
+			};
+			name = Release;
+		};
+		F52CE6531DD7C866000C921D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 24597663G4;
+				INFOPLIST_FILE = "CodeDay WinUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ArnavChawla.CodeDay-WinUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "CodeDay Win";
+			};
+			name = Debug;
+		};
+		F52CE6541DD7C866000C921D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 24597663G4;
+				INFOPLIST_FILE = "CodeDay WinUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ArnavChawla.CodeDay-WinUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "CodeDay Win";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F52CE6191DD7C866000C921D /* Build configuration list for PBXProject "CodeDay Win" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F52CE64A1DD7C866000C921D /* Debug */,
+				F52CE64B1DD7C866000C921D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F52CE64C1DD7C866000C921D /* Build configuration list for PBXNativeTarget "CodeDay Win" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F52CE64D1DD7C866000C921D /* Debug */,
+				F52CE64E1DD7C866000C921D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F52CE64F1DD7C866000C921D /* Build configuration list for PBXNativeTarget "CodeDay WinTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F52CE6501DD7C866000C921D /* Debug */,
+				F52CE6511DD7C866000C921D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F52CE6521DD7C866000C921D /* Build configuration list for PBXNativeTarget "CodeDay WinUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F52CE6531DD7C866000C921D /* Debug */,
+				F52CE6541DD7C866000C921D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F52CE6161DD7C866000C921D /* Project object */;
+}
