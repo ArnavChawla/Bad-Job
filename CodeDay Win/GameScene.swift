@@ -8,82 +8,289 @@
 
 import SpriteKit
 import GameplayKit
-
-class GameScene: SKScene {
+import UIKit
+class GameScene: SKScene , SKPhysicsContactDelegate{
+    var gamearea: CGRect
+    var x : Bool = false
+    var score = SKLabelNode(fontNamed: "Roboto-Light.ttf")
+    var gameScore = 0
+override init (size: CGSize)
+    {
+        let max : CGFloat = 16.0/9.0
+        let play = size.height / max
+        let marg = (size.width-play)/2
+        gamearea = CGRect(x:marg ,y:0 ,width: play ,height: size.height)
+        super.init(size: size)
+        
+    }
     
-    private var label : SKLabelNode?
-    private var spinnyNode : SKShapeNode?
-    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+     var boss = SKSpriteNode(imageNamed: "Boss")
+    var player = SKSpriteNode(imageNamed: "MainPlayer")
+     let desk5 = SKSpriteNode(imageNamed: "BackGroun")
+     let desk4 = SKSpriteNode(imageNamed: "BackGroun")
+     let desk3 = SKSpriteNode(imageNamed: "BackGroun")
+     let desk2 = SKSpriteNode(imageNamed: "BackGroun")
+     let desk1 = SKSpriteNode(imageNamed: "BackGroun")
+     let desk = SKSpriteNode(imageNamed: "BackGroun")
+    struct PhysicsCatagories {
+        static let None : UInt32 = 0
+        static let Boss : UInt32 = 0b1//1
+        static let desk : UInt32 = 0b10//2
+        static let player : UInt32 = 0b100//3
+        
+    }
     override func didMove(to view: SKView) {
         
-        // Get label node from scene and store it for use later
-        self.label = self.childNode(withName: "//helloLabel") as? SKLabelNode
-        if let label = self.label {
-            label.alpha = 0.0
-            label.run(SKAction.fadeIn(withDuration: 2.0))
+        score.text = "Score: "
+        score.fontSize = 100
+        score.position = CGPoint(x: self.size.width/2, y: self.size.height/2 + 900)
+        self.addChild(score)
+        self.physicsWorld.contactDelegate = self
+        let background = SKSpriteNode(imageNamed: "Backlegit")
+        background.size = self.size
+        background.zPosition = -1
+        background.position = CGPoint(x: self.size.width/2, y: self.size.height/2)
+        self.addChild(background)
+   
+        desk.name = "desk"
+        desk.zPosition = 1
+        desk.position = CGPoint(x:self.size.width/2-400 ,y: self.size.height/2 + 600)
+        desk.physicsBody = SKPhysicsBody(rectangleOf: desk.size)
+         desk.physicsBody!.isDynamic = true
+        desk.physicsBody!.affectedByGravity = false
+        desk.physicsBody!.categoryBitMask = PhysicsCatagories.desk
+        desk.physicsBody?.collisionBitMask = PhysicsCatagories.None
+        desk.physicsBody?.contactTestBitMask = PhysicsCatagories.Boss|PhysicsCatagories.player
+
+        self.addChild(desk)
+        desk1.name = "desk"
+        desk1.zPosition = 1
+        desk1.position = CGPoint(x:self.size.width/2+400 ,y: self.size.height/2 + 600)
+        desk1.physicsBody = SKPhysicsBody(rectangleOf: desk.size)
+        desk1.physicsBody!.isDynamic = true
+
+        desk1.physicsBody!.affectedByGravity = false
+        desk1.physicsBody!.categoryBitMask = PhysicsCatagories.desk
+     desk1.physicsBody?.collisionBitMask = PhysicsCatagories.None
+        desk1.physicsBody?.contactTestBitMask = PhysicsCatagories.Boss|PhysicsCatagories.player
+        self.addChild(desk1)
+        desk2.name = "desk"
+        desk2.zPosition = 1
+        desk2.position = CGPoint(x:self.size.width/2-400 ,y: self.size.height/2)
+        desk2.physicsBody = SKPhysicsBody(rectangleOf: desk.size)
+        desk2.physicsBody!.affectedByGravity = false
+        desk2.physicsBody!.categoryBitMask = PhysicsCatagories.desk
+        desk2.physicsBody?.collisionBitMask = PhysicsCatagories.None
+        desk2.physicsBody?.contactTestBitMask = PhysicsCatagories.Boss|PhysicsCatagories.player
+        desk2.physicsBody!.isDynamic = true
+
+
+        self.addChild(desk2)
+ 
+        desk3.name = "desk"
+        desk3.zPosition = 1
+        desk3.position = CGPoint(x:self.size.width/2+400 ,y: self.size.height/2)
+        desk3.physicsBody = SKPhysicsBody(rectangleOf: desk.size)
+        desk3.physicsBody!.isDynamic = true
+        desk3.physicsBody!.affectedByGravity = false
+        desk3.physicsBody!.categoryBitMask = PhysicsCatagories.desk
+        desk3.physicsBody?.collisionBitMask = PhysicsCatagories.None
+        desk3.physicsBody?.contactTestBitMask = PhysicsCatagories.Boss|PhysicsCatagories.player
+
+        self.addChild(desk3)
+        
+        desk4.name = "desk"
+        desk4.zPosition = 1
+        desk4.position = CGPoint(x:self.size.width/2-400 ,y: self.size.height/2 - 600)
+        desk4.physicsBody = SKPhysicsBody(rectangleOf: desk.size)
+        desk4.physicsBody!.isDynamic = true
+
+        desk4.physicsBody!.affectedByGravity = false
+        desk4.physicsBody!.categoryBitMask = PhysicsCatagories.desk
+        desk4.physicsBody?.collisionBitMask = PhysicsCatagories.None
+        desk4.physicsBody?.contactTestBitMask = PhysicsCatagories.Boss|PhysicsCatagories.player
+
+
+        self.addChild(desk4)
+       
+        desk5.name = "desk"
+        desk5.zPosition = 1
+        desk5.position = CGPoint(x:self.size.width/2+400 ,y: self.size.height/2 - 600)
+        desk5.physicsBody = SKPhysicsBody(rectangleOf: desk.size)
+        desk5.physicsBody!.isDynamic = true
+
+        desk5.physicsBody!.affectedByGravity = false
+        desk5.physicsBody!.categoryBitMask = PhysicsCatagories.desk
+        desk5.physicsBody?.collisionBitMask = PhysicsCatagories.None
+        desk5.physicsBody?.contactTestBitMask = PhysicsCatagories.Boss | PhysicsCatagories.player
+
+        self.addChild(desk5)
+        boss.setScale(1)
+        boss.physicsBody = SKPhysicsBody(rectangleOf: boss.size)
+        boss.physicsBody!.affectedByGravity = false
+        boss.physicsBody!.categoryBitMask = PhysicsCatagories.Boss
+        boss.physicsBody?.collisionBitMask = PhysicsCatagories.None
+        boss.physicsBody?.contactTestBitMask = PhysicsCatagories.desk
+
+        boss.position = CGPoint(x: self.size.width/2 + 300 ,  y: self.size.height/2 - 900)
+        self.addChild(boss)
+        player.setScale(1)
+      player.zPosition = 1
+        player.position = CGPoint(x: self.size.width/2  ,  y: self.size.height/2)
+        
+        player.physicsBody = SKPhysicsBody(rectangleOf: boss.size )
+        player.physicsBody!.categoryBitMask = PhysicsCatagories.player
+        player.physicsBody!.affectedByGravity = false
+        player.physicsBody!.isDynamic = true
+        player.physicsBody!.friction=10.2
+         player.zPosition = 5
+        player.physicsBody!.collisionBitMask = PhysicsCatagories.None
+        player.physicsBody!.contactTestBitMask = PhysicsCatagories.desk | PhysicsCatagories.Boss
+  
+        self.addChild(player)
+        
+        
+        
+
+    }
+    func  changeScene()
+    {
+        let sceneToMove = GameOverScene(size: self.size)
+        sceneToMove.scaleMode = self.scaleMode
+        let my = SKTransition.fade(withDuration: 1.25)
+        self.view!.presentScene(sceneToMove,transition: my)
+    }
+    func  changeScene1()
+    {
+        let sceneToMove = TheWinner(size: self.size)
+        sceneToMove.scaleMode = self.scaleMode
+        let my = SKTransition.fade(withDuration: 1.25)
+        self.view!.presentScene(sceneToMove,transition: my)
+    }
+
+    func addScore()
+    {
+        gameScore += 1
+        score.text = "Score: \(gameScore)"
+    }
+
+    func didBegin(_ contact: SKPhysicsContact)  {
+        var body1 = SKPhysicsBody()
+        var body2 = SKPhysicsBody()
+        if contact.bodyA.categoryBitMask < contact.bodyB.categoryBitMask
+        {
+            body1 = contact.bodyA
+            body2 = contact.bodyB
+    
         }
-        
-        // Create shape node to use during mouse interaction
-        let w = (self.size.width + self.size.height) * 0.05
-        self.spinnyNode = SKShapeNode.init(rectOf: CGSize.init(width: w, height: w), cornerRadius: w * 0.3)
-        
-        if let spinnyNode = self.spinnyNode {
-            spinnyNode.lineWidth = 2.5
+        if body2.categoryBitMask == PhysicsCatagories.Boss && body1.categoryBitMask == PhysicsCatagories.desk
+        {
+            boss.speed = 0.0
+            boss.position = CGPoint(x: self.size.width/2+300, y: self.size.height/2-900)
+        }
+        if body1.categoryBitMask == PhysicsCatagories.desk &&  body2.categoryBitMask == PhysicsCatagories.player
+        {
+            x=true
             
-            spinnyNode.run(SKAction.repeatForever(SKAction.rotate(byAngle: CGFloat(M_PI), duration: 1)))
-            spinnyNode.run(SKAction.sequence([SKAction.wait(forDuration: 0.5),
-                                              SKAction.fadeOut(withDuration: 0.5),
-                                              SKAction.removeFromParent()]))
+            DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
+                // Put your code which should be executed with a delay here
+            
+            self.x = false
+                
+            })
         }
-    }
-    
-    
-    func touchDown(atPoint pos : CGPoint) {
-        if let n = self.spinnyNode?.copy() as! SKShapeNode? {
-            n.position = pos
-            n.strokeColor = SKColor.green
-            self.addChild(n)
+        if body1.categoryBitMask == PhysicsCatagories.Boss &&  body2.categoryBitMask == PhysicsCatagories.player
+        {
+            changeScene()
         }
+
     }
-    
-    func touchMoved(toPoint pos : CGPoint) {
-        if let n = self.spinnyNode?.copy() as! SKShapeNode? {
-            n.position = pos
-            n.strokeColor = SKColor.blue
-            self.addChild(n)
+    var previousPosition = CGPoint()
+    override func update(_ currentTime: TimeInterval) {
+        //initialize random variable p/gv
+        var p = arc4random_uniform(9)
+        
+        //define actions
+        let run1 = SKAction.moveTo(x: self.size.width/2 + 600 , duration: 7)
+        let run2 = SKAction.moveTo(x: self.size.width/2 - 600 , duration: 7)
+        let run3 = SKAction.moveTo(y: self.size.height/2 + 600 , duration: 7)
+        let run4 = SKAction.moveTo(y: self.size.height/2 - 600 , duration: 7)
+        
+        //run actions based on random number
+        if p == 1   && boss.position.x < self.size.width/2
+        {
+            self.boss.run(run1)
         }
-    }
-    
-    func touchUp(atPoint pos : CGPoint) {
-        if let n = self.spinnyNode?.copy() as! SKShapeNode? {
-            n.position = pos
-            n.strokeColor = SKColor.red
-            self.addChild(n)
-        }
-    }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if let label = self.label {
-            label.run(SKAction.init(named: "Pulse")!, withKey: "fadeInOut")
+        else if p == 3  && boss.position.x > self.size.width/2
+        {
+            self.boss.run(run2)
         }
         
-        for t in touches { self.touchDown(atPoint: t.location(in: self)) }
-    }
+        else if p == 5   && boss.position.x < self.size.height/2
+        {
+            self.boss.run(run3)
+        }
+        
+        else if p == 7   && boss.position.x > self.size.height/2
+        {
+            self.boss.run(run4)
+        }
+        if gameScore == 30
+        {
+            changeScene1()
+        }
+
+        
+        //check for boss being out game area
+        if(boss.position.y>gamearea.maxY)
+        {
+            boss.position.y = gamearea.maxY
+        }
+        if(boss.position.y>gamearea.minY)
+        {
+            boss.position.y = gamearea.minY
+        }
+        if(boss.position.x>gamearea.maxX)
+        {
+            boss.position.x = gamearea.maxX
+        }
+        if(boss.position.x>gamearea.minX)
+        {
+            boss.position.y = gamearea.minX
+        }
+        
+        //check for player passing center line
+        if(player.position.y>=1024  && previousPosition.y<1024)
+        {
+            addScore()
+           
+        }
+        else if(previousPosition.y>1024 && player.position.y<=1024)
+        {
+            addScore()
+      
+        }
+        previousPosition = player.position
+           }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        for t in touches { self.touchMoved(toPoint: t.location(in: self)) }
-    }
+        for touch: AnyObject in touches {
+            if x==false
+            {
+                let location = touch.location(in: self)
+                let newLocation = touch.previousLocation(in:self)
+                let amountdragged = location.y - newLocation.y
+                let bleh  = location.x - newLocation.x
+                player.position.y += amountdragged
+                player.position.x += bleh
+            }
+            
+        }
+
     
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        for t in touches { self.touchUp(atPoint: t.location(in: self)) }
     }
-    
-    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
-        for t in touches { self.touchUp(atPoint: t.location(in: self)) }
-    }
-    
-    
-    override func update(_ currentTime: TimeInterval) {
-        // Called before each frame is rendered
-    }
+
 }

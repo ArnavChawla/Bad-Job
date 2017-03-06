@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		F52CE6221DD7C866000C921D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52CE6211DD7C866000C921D /* AppDelegate.swift */; };
 		F52CE6241DD7C866000C921D /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F52CE6231DD7C866000C921D /* GameScene.sks */; };
-		F52CE6261DD7C866000C921D /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = F52CE6251DD7C866000C921D /* Actions.sks */; };
 		F52CE6281DD7C866000C921D /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52CE6271DD7C866000C921D /* GameScene.swift */; };
 		F52CE62A1DD7C866000C921D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52CE6291DD7C866000C921D /* GameViewController.swift */; };
 		F52CE62D1DD7C866000C921D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52CE62B1DD7C866000C921D /* Main.storyboard */; };
@@ -17,6 +16,26 @@
 		F52CE6321DD7C866000C921D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52CE6301DD7C866000C921D /* LaunchScreen.storyboard */; };
 		F52CE63D1DD7C866000C921D /* CodeDay_WinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52CE63C1DD7C866000C921D /* CodeDay_WinTests.swift */; };
 		F52CE6481DD7C866000C921D /* CodeDay_WinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52CE6471DD7C866000C921D /* CodeDay_WinUITests.swift */; };
+		F534C61E1DD862BB00E5195F /* StartScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F534C61D1DD862BB00E5195F /* StartScreen.swift */; };
+		F551D22B1DD8D0CB006993E4 /* BossLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F551D22A1DD8D0CB006993E4 /* BossLevel.swift */; };
+		F572ACF01DD891C2009221E6 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = F572ACEF1DD891C2009221E6 /* File.swift */; };
+		F57B233E1E22B87300636C0A /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F57B233D1E22B87300636C0A /* AdSupport.framework */; };
+		F57B23401E22B9EB00636C0A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F57B233F1E22B9EB00636C0A /* AudioToolbox.framework */; };
+		F57B23421E22B9FB00636C0A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F57B23411E22B9FB00636C0A /* AVFoundation.framework */; };
+		F57B23441E22BE3F00636C0A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F57B23431E22BE3F00636C0A /* CoreGraphics.framework */; };
+		F57B23461E22BE4F00636C0A /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F57B23451E22BE4F00636C0A /* CoreTelephony.framework */; };
+		F57B23481E22BE6000636C0A /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F57B23471E22BE6000636C0A /* EventKit.framework */; };
+		F57B234A1E22BE6E00636C0A /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F57B23491E22BE6E00636C0A /* EventKitUI.framework */; };
+		F57B234C1E22BE7900636C0A /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F57B234B1E22BE7900636C0A /* MessageUI.framework */; };
+		F57B234E1E22BE8300636C0A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F57B234D1E22BE8300636C0A /* StoreKit.framework */; };
+		F57B23501E22BE8F00636C0A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F57B234F1E22BE8F00636C0A /* SystemConfiguration.framework */; };
+		F58EC4101DD8787600C34626 /* Garbage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58EC40F1DD8787600C34626 /* Garbage.swift */; };
+		F58EC4121DD87A6D00C34626 /* Promotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58EC4111DD87A6D00C34626 /* Promotion.swift */; };
+		F58EC4141DD8820A00C34626 /* TheWinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58EC4131DD8820A00C34626 /* TheWinner.swift */; };
+		F58EC4161DD8865D00C34626 /* Last.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58EC4151DD8865D00C34626 /* Last.swift */; };
+		F5A1DC311E19C4B500CBDC27 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A1DC301E19C4B500CBDC27 /* GoogleMobileAds.framework */; };
+		F5A1DC331E19DAD900CBDC27 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A1DC321E19DAD900CBDC27 /* GoogleMobileAds.framework */; };
+		F5EE82711DD83D5B000AD367 /* GameOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE82701DD83D5B000AD367 /* GameOver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +59,6 @@
 		F52CE61E1DD7C866000C921D /* CodeDay Win.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CodeDay Win.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F52CE6211DD7C866000C921D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F52CE6231DD7C866000C921D /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		F52CE6251DD7C866000C921D /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		F52CE6271DD7C866000C921D /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		F52CE6291DD7C866000C921D /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		F52CE62C1DD7C866000C921D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -53,6 +71,28 @@
 		F52CE6431DD7C866000C921D /* CodeDay WinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CodeDay WinUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F52CE6471DD7C866000C921D /* CodeDay_WinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeDay_WinUITests.swift; sourceTree = "<group>"; };
 		F52CE6491DD7C866000C921D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F534C61D1DD862BB00E5195F /* StartScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartScreen.swift; sourceTree = "<group>"; };
+		F551D22A1DD8D0CB006993E4 /* BossLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BossLevel.swift; sourceTree = "<group>"; };
+		F572ACEF1DD891C2009221E6 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		F57B233D1E22B87300636C0A /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		F57B233F1E22B9EB00636C0A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F57B23411E22B9FB00636C0A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F57B23431E22BE3F00636C0A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F57B23451E22BE4F00636C0A /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		F57B23471E22BE6000636C0A /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		F57B23491E22BE6E00636C0A /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		F57B234B1E22BE7900636C0A /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		F57B234D1E22BE8300636C0A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		F57B234F1E22BE8F00636C0A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F58EC40F1DD8787600C34626 /* Garbage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Garbage.swift; sourceTree = "<group>"; };
+		F58EC4111DD87A6D00C34626 /* Promotion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Promotion.swift; sourceTree = "<group>"; };
+		F58EC4131DD8820A00C34626 /* TheWinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheWinner.swift; sourceTree = "<group>"; };
+		F58EC4151DD8865D00C34626 /* Last.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Last.swift; sourceTree = "<group>"; };
+		F5A1DC2E1E19C49900CBDC27 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "../../Downloads/OutOfTheWoods-master/GoogleMobileAds.framework"; sourceTree = "<group>"; };
+		F5A1DC301E19C4B500CBDC27 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "../GoogleMobileAdsSdkiOS-7.16.0 4/GoogleMobileAds.framework"; sourceTree = "<group>"; };
+		F5A1DC321E19DAD900CBDC27 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		F5EE826D1DD83A7C000AD367 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		F5EE82701DD83D5B000AD367 /* GameOver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameOver.swift; path = ../GameOver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +100,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F57B23501E22BE8F00636C0A /* SystemConfiguration.framework in Frameworks */,
+				F57B234E1E22BE8300636C0A /* StoreKit.framework in Frameworks */,
+				F57B234C1E22BE7900636C0A /* MessageUI.framework in Frameworks */,
+				F57B234A1E22BE6E00636C0A /* EventKitUI.framework in Frameworks */,
+				F57B23481E22BE6000636C0A /* EventKit.framework in Frameworks */,
+				F57B23461E22BE4F00636C0A /* CoreTelephony.framework in Frameworks */,
+				F57B23441E22BE3F00636C0A /* CoreGraphics.framework in Frameworks */,
+				F57B23421E22B9FB00636C0A /* AVFoundation.framework in Frameworks */,
+				F57B23401E22B9EB00636C0A /* AudioToolbox.framework in Frameworks */,
+				F57B233E1E22B87300636C0A /* AdSupport.framework in Frameworks */,
+				F5A1DC331E19DAD900CBDC27 /* GoogleMobileAds.framework in Frameworks */,
+				F5A1DC311E19C4B500CBDC27 /* GoogleMobileAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,10 +135,12 @@
 		F52CE6151DD7C866000C921D = {
 			isa = PBXGroup;
 			children = (
+				F5A1DC321E19DAD900CBDC27 /* GoogleMobileAds.framework */,
 				F52CE6201DD7C866000C921D /* CodeDay Win */,
 				F52CE63B1DD7C866000C921D /* CodeDay WinTests */,
 				F52CE6461DD7C866000C921D /* CodeDay WinUITests */,
 				F52CE61F1DD7C866000C921D /* Products */,
+				F5A1DC2D1E19C49900CBDC27 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,12 +158,20 @@
 			isa = PBXGroup;
 			children = (
 				F52CE6211DD7C866000C921D /* AppDelegate.swift */,
+				F5EE82701DD83D5B000AD367 /* GameOver.swift */,
 				F52CE6231DD7C866000C921D /* GameScene.sks */,
-				F52CE6251DD7C866000C921D /* Actions.sks */,
+				F58EC4151DD8865D00C34626 /* Last.swift */,
 				F52CE6271DD7C866000C921D /* GameScene.swift */,
+				F58EC4131DD8820A00C34626 /* TheWinner.swift */,
 				F52CE6291DD7C866000C921D /* GameViewController.swift */,
 				F52CE62B1DD7C866000C921D /* Main.storyboard */,
 				F52CE62E1DD7C866000C921D /* Assets.xcassets */,
+				F58EC4111DD87A6D00C34626 /* Promotion.swift */,
+				F58EC40F1DD8787600C34626 /* Garbage.swift */,
+				F551D22A1DD8D0CB006993E4 /* BossLevel.swift */,
+				F534C61D1DD862BB00E5195F /* StartScreen.swift */,
+				F572ACEF1DD891C2009221E6 /* File.swift */,
+				F5EE826D1DD83A7C000AD367 /* Roboto-Light.ttf */,
 				F52CE6301DD7C866000C921D /* LaunchScreen.storyboard */,
 				F52CE6331DD7C866000C921D /* Info.plist */,
 			);
@@ -132,6 +194,25 @@
 				F52CE6491DD7C866000C921D /* Info.plist */,
 			);
 			path = "CodeDay WinUITests";
+			sourceTree = "<group>";
+		};
+		F5A1DC2D1E19C49900CBDC27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F57B234F1E22BE8F00636C0A /* SystemConfiguration.framework */,
+				F57B234D1E22BE8300636C0A /* StoreKit.framework */,
+				F57B234B1E22BE7900636C0A /* MessageUI.framework */,
+				F57B23491E22BE6E00636C0A /* EventKitUI.framework */,
+				F57B23471E22BE6000636C0A /* EventKit.framework */,
+				F57B23451E22BE4F00636C0A /* CoreTelephony.framework */,
+				F57B23431E22BE3F00636C0A /* CoreGraphics.framework */,
+				F57B23411E22B9FB00636C0A /* AVFoundation.framework */,
+				F57B233F1E22B9EB00636C0A /* AudioToolbox.framework */,
+				F57B233D1E22B87300636C0A /* AdSupport.framework */,
+				F5A1DC301E19C4B500CBDC27 /* GoogleMobileAds.framework */,
+				F5A1DC2E1E19C49900CBDC27 /* GoogleMobileAds.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,7 +329,6 @@
 				F52CE6241DD7C866000C921D /* GameScene.sks in Resources */,
 				F52CE62F1DD7C866000C921D /* Assets.xcassets in Resources */,
 				F52CE6321DD7C866000C921D /* LaunchScreen.storyboard in Resources */,
-				F52CE6261DD7C866000C921D /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +354,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				F52CE6281DD7C866000C921D /* GameScene.swift in Sources */,
+				F58EC4121DD87A6D00C34626 /* Promotion.swift in Sources */,
+				F58EC4101DD8787600C34626 /* Garbage.swift in Sources */,
 				F52CE62A1DD7C866000C921D /* GameViewController.swift in Sources */,
+				F551D22B1DD8D0CB006993E4 /* BossLevel.swift in Sources */,
+				F534C61E1DD862BB00E5195F /* StartScreen.swift in Sources */,
+				F572ACF01DD891C2009221E6 /* File.swift in Sources */,
 				F52CE6221DD7C866000C921D /* AppDelegate.swift in Sources */,
+				F58EC4141DD8820A00C34626 /* TheWinner.swift in Sources */,
+				F58EC4161DD8865D00C34626 /* Last.swift in Sources */,
+				F5EE82711DD83D5B000AD367 /* GameOver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,7 +458,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -414,7 +502,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -428,11 +516,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 24597663G4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CodeDay\\ Win",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "CodeDay Win/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ArnavChawla.CodeDay-Win";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ArnavChawla.Bad-Job";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -441,11 +536,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 24597663G4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CodeDay\\ Win",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "CodeDay Win/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ArnavChawla.CodeDay-Win";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ArnavChawla.Bad-Job";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -526,6 +628,7 @@
 				F52CE64E1DD7C866000C921D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F52CE64F1DD7C866000C921D /* Build configuration list for PBXNativeTarget "CodeDay WinTests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +637,7 @@
 				F52CE6511DD7C866000C921D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F52CE6521DD7C866000C921D /* Build configuration list for PBXNativeTarget "CodeDay WinUITests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +646,7 @@
 				F52CE6541DD7C866000C921D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
